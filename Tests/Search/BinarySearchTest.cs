@@ -1,6 +1,4 @@
-﻿using Algorithms;
-
-namespace Tests;
+﻿namespace Tests.Search;
 
 public class BinarySearchTest
 {
@@ -17,7 +15,7 @@ public class BinarySearchTest
         var expectedIndex = -1;
         
         // Act
-        var index = Search.BinarySearch(array, target);
+        var index = Algorithms.Search.BinarySearch(array, target);
 
         // Assert
         Assert.Equal(expectedIndex, index);
@@ -29,7 +27,7 @@ public class BinarySearchTest
     public void Test_Boundaries(int[] array, int target, int expectedIndex)
     {
         // Arrange & Act
-        var index = Search.BinarySearch(array, target);
+        var index = Algorithms.Search.BinarySearch(array, target);
 
         // Assert
         Assert.Equal(expectedIndex, index);
@@ -43,7 +41,7 @@ public class BinarySearchTest
     public void Test_Negatives(int[] array, int target, int expectedIndex)
     {
         // Arrange & Act
-        var index = Search.BinarySearch(array, target);
+        var index = Algorithms.Search.BinarySearch(array, target);
         
         // Assert
         Assert.Equal(expectedIndex, index);
@@ -57,7 +55,7 @@ public class BinarySearchTest
     public void Test_Duplicates_Returns_First_Occurrence(int[] array, int target, int expectedIndex)
     {
         // Arrange & Act
-        var index = Search.BinarySearch(array, target);
+        var index = Algorithms.Search.BinarySearch(array, target);
 
         // Assert
         Assert.Equal(expectedIndex, index);
