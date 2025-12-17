@@ -10,4 +10,11 @@ public static class RecursionExperiment
         Console.WriteLine("=== Factorial ===");
         Console.WriteLine($"Factorial of {n}: {factorial}");
     }
+
+    public static void Fibonacci(int n)
+    {
+        var fibonacci = Recursion.Fibonacci(n);
+        Console.WriteLine("=== Fibonacci ===");
+        Console.WriteLine($"Fibonacci of {n}: {fibonacci}");
+    }
 }

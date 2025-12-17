@@ -18,5 +18,6 @@ using Playground.Experiments;
 #region RECURSION
 
 RecursionExperiment.Factorial(3);
+RecursionExperiment.Fibonacci(3);
 
 #endregion
